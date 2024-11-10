@@ -1,18 +1,23 @@
+import { FaSearch } from "react-icons/fa";
 
 function Header() {
     return (
-        <header className="flex justify-between items-center bg-gradient-to-r from-red-800 to-black p-4 text-white">
-            <div className="space-x-4">
-                <span>Music</span>
-                <span>Podcast</span>
-                <span>Live</span>
-                <span>Radio</span>
+        <header className="flex items-center justify-between px-8 py-4 text-white">
+            <nav className="flex space-x-14 text-lg font-medium">
+                <span className="hover:text-red-500 cursor-pointer">Music</span>
+                <span className="hover:text-red-500 cursor-pointer">Podcast</span>
+                <span className="hover:text-red-500 cursor-pointer">Live</span>
+                <span className="hover:text-red-500 cursor-pointer">Radio</span>
+            </nav>
+
+            <div className="flex items-center bg-[#2C0000] rounded-full px-4 py-2 w-96">
+                <input
+                    type="text"
+                    placeholder="Michael Jackson"
+                    className="bg-transparent focus:outline-none w-full text-white placeholder-white"
+                />
+                <FaSearch className="text-white ml-3 cursor-pointer" />
             </div>
-            <input
-                type="text"
-                placeholder="Search"
-                className="bg-gray-800 p-2 rounded-md focus:outline-none"
-            />
         </header>
     );
 }
