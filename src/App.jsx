@@ -15,7 +15,7 @@ function App() {
           <ArtistInfo />
           <SongList />
         </main>
-        <div className="w-80 bg-gradient-to-b from-[#2c0a0a] to-black flex items-center justify-center">
+        <div className="w-80 bg-gradient-to-b from-[#2c0a0a] to-black flex items-end justify-center">
           <NowPlayingCard />
         </div>
       </div>
