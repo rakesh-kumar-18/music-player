@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 
 function Header() {
     return (
-        <header className="flex items-center justify-between px-8 py-4 text-white">
+        <header className="flex items-center justify-between px-8 py-4 text-[#E5DDDD]">
             <nav className="flex space-x-14 text-lg font-medium">
                 <span className="hover:text-red-500 cursor-pointer">Music</span>
                 <span className="hover:text-red-500 cursor-pointer">Podcast</span>

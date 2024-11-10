@@ -5,7 +5,7 @@ import ArtistImage from "../assets/michael.png";
 function ArtistInfo() {
     return (
         <div
-            className="relative p-16 m-16 text-white rounded-xl h-[100px] lg:h-[200px] flex items-center"
+            className="relative p-16 m-16 mb-2 text-[#F6F6F6] rounded-xl h-[100px] lg:h-[200px] flex items-center"
             style={{
                 backgroundImage: `url(${BackgroundImage})`,
                 backgroundSize: "cover",
@@ -21,10 +21,10 @@ function ArtistInfo() {
             <div className="relative z-10 max-w-xs">
                 <div className="flex items-center space-x-2">
                     <FaCheckCircle className="text-blue-500" />
-                    <span className="text-sm text-gray-300">Verified Artist</span>
+                    <span className="text-sm text-[#CFC5C5]">Verified Artist</span>
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Michael Jackson</h2>
-                <p className="text-gray-400">27,852,501 monthly listeners</p>
+                <p>27,852,501 monthly listeners</p>
             </div>
         </div>
     );
