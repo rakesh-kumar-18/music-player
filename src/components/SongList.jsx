@@ -1,67 +1,10 @@
-import { useState } from "react";
 import { DndContext, useSensor, useSensors, PointerSensor } from "@dnd-kit/core";
 import { rectSortingStrategy, SortableContext, arrayMove } from "@dnd-kit/sortable";
 import SongItem from "./SongItem";
-import One from "../assets/images/1.png";
-import Three from "../assets/images/3.png";
-import Four from "../assets/images/4.png";
-import Five from "../assets/images/5.png";
-import BillieJean from "../assets/music/billie_jean.mp3";
-import BeatIt from "../assets/music/beat_it.mp3";
-import SmoothCriminal from "../assets/music/smooth_criminal.mp3";
-import DontStop from "../assets/music/dont_stop.mp3";
-import RockWithYou from "../assets/music/rock_with_you.mp3";
+import { useAudio } from "../contexts/AudioContext";
 
 function SongList() {
-    const initialSongs = [
-        {
-            id: 1,
-            title: "Billie Jean",
-            src: BillieJean,
-            playCount: "1,040,811,084",
-            duration: "4:53",
-            album: "Thriller 25 Super Deluxe Edition",
-            image: One,
-        },
-        {
-            id: 2,
-            title: "Beat It",
-            src: BeatIt,
-            playCount: "643,786,045",
-            duration: "4:18",
-            album: "Thriller 25 Super Deluxe Edition",
-            image: One,
-        },
-        {
-            id: 3,
-            title: "Smooth Criminal - 2012 Remaster",
-            src: SmoothCriminal,
-            playCount: "407,234,004",
-            duration: "4:17",
-            album: "Thriller 25 Super Deluxe Edition",
-            image: Three,
-        },
-        {
-            id: 4,
-            title: "Don't Stop 'Til You Get Enough",
-            src: DontStop,
-            playCount: "316,391,952",
-            duration: "6:05",
-            album: "Bad 25th Anniversary Edition",
-            image: Four,
-        },
-        {
-            id: 5,
-            title: "Rock With You - Single Version",
-            src: RockWithYou,
-            playCount: "268,187,218",
-            duration: "3:40",
-            album: "Off The Wall",
-            image: Five,
-        },
-    ];
-
-    const [songs, setSongs] = useState(initialSongs);
+    const { songs, setSongs } = useAudio();
     const sensors = useSensors(useSensor(PointerSensor));
 
     const handleDragEnd = (event) => {

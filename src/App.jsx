@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import ArtistInfo from "./components/ArtistInfo";
 import SongList from "./components/SongList";
 import NowPlayingCard from "./components/NowPlayingCard";
-// import { MusicPlayerProvider } from "./components/MusicPlayerProvider";
 import { AudioProvider } from './contexts/AudioContext';
 
 function App() {
