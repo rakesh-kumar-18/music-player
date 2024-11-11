@@ -2,17 +2,17 @@ import { useState } from "react";
 import { DndContext, useSensor, useSensors, PointerSensor } from "@dnd-kit/core";
 import { rectSortingStrategy, SortableContext, arrayMove } from "@dnd-kit/sortable";
 import SongItem from "./SongItem";
-import One from "../assets/1.png";
-import Three from "../assets/3.png";
-import Four from "../assets/4.png";
-import Five from "../assets/5.png";
+import One from "../assets/images/1.png";
+import Three from "../assets/images/3.png";
+import Four from "../assets/images/4.png";
+import Five from "../assets/images/5.png";
 
 function SongList() {
     const initialSongs = [
         {
             id: 1,
             title: "Billie Jean",
-            src: "/music/billie_jean.mp3",
+            src: "../assets/music/billie_jean.mp3",
             playCount: "1,040,811,084",
             duration: "4:53",
             album: "Thriller 25 Super Deluxe Edition",
@@ -21,7 +21,7 @@ function SongList() {
         {
             id: 2,
             title: "Beat It",
-            src: "/music/beat_it.mp3",
+            src: "../assets/music/beat_it.mp3",
             playCount: "643,786,045",
             duration: "4:18",
             album: "Thriller 25 Super Deluxe Edition",
@@ -30,7 +30,7 @@ function SongList() {
         {
             id: 3,
             title: "Smooth Criminal - 2012 Remaster",
-            src: "/music/smooth_criminal.mp3",
+            src: "../assets/music/smooth_criminal.mp3",
             playCount: "407,234,004",
             duration: "4:17",
             album: "Thriller 25 Super Deluxe Edition",
@@ -39,7 +39,7 @@ function SongList() {
         {
             id: 4,
             title: "Don't Stop 'Til You Get Enough",
-            src: "/music/dont_stop.mp3",
+            src: "../assets/music/dont_stop.mp3",
             playCount: "316,391,952",
             duration: "6:05",
             album: "Bad 25th Anniversary Edition",
@@ -48,7 +48,7 @@ function SongList() {
         {
             id: 5,
             title: "Rock With You - Single Version",
-            src: "/music/rock_with_you.mp3",
+            src: "../assets/music/rock_with_you.mp3",
             playCount: "268,187,218",
             duration: "3:40",
             album: "Off The Wall",

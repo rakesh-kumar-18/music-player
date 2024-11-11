@@ -1,6 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
-import BackgroundImage from "../assets/artistbackground.png";
-import ArtistImage from "../assets/michael.png";
+import BackgroundImage from "../assets/images/artistbackground.png";
+import ArtistImage from "../assets/images/michael.png";
 
 function ArtistInfo() {
     return (
