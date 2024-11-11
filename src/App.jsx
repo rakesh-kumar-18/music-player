@@ -3,11 +3,12 @@ import Header from "./components/Header";
 import ArtistInfo from "./components/ArtistInfo";
 import SongList from "./components/SongList";
 import NowPlayingCard from "./components/NowPlayingCard";
-import { MusicPlayerProvider } from "./components/MusicPlayerProvider";
+// import { MusicPlayerProvider } from "./components/MusicPlayerProvider";
+import { AudioProvider } from './contexts/AudioContext';
 
 function App() {
   return (
-    <MusicPlayerProvider>
+    <AudioProvider>
       <div className="flex h-screen">
         <Sidebar />
         <main className="flex-1 flex flex-col bg-custom-gradient">
@@ -19,7 +20,7 @@ function App() {
           <NowPlayingCard />
         </div>
       </div>
-    </MusicPlayerProvider>
+    </AudioProvider>
   );
 }
 
